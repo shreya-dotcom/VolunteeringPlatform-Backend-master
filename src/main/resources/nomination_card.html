@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <link rel="stylesheet" th:href="@{src/main/resources/nomination_card_style.css}" />
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" type='text/css' />
+    <title>Nomination Card</title>
+</head>
+
+<body >
+<div class="title">
+    <h1>Nomination for Awards and rewards</h1>
+</div>
+
+<div class="flip-card">
+    <div class="back-footer">
+        <img th:src="@{src/main/resources/images/logobg.jpg}" />
+        <h2 th:text=" 'Congratulations ' + ${Firstname} + ' ' + ${Surname} + '!!'" ></h2>
+        <p>You are nominated for Awards and rewards</p>
+        <p><i class="fas fa-award"></i>"Correction does much, but encouragement does more."</p>
+    </div>
+</div>
+
+
+
+</body>
+</html>
